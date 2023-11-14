@@ -24,7 +24,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint ./src --ext .jsx --ext .js",
-    "e2e": "cypress run"
+    "e2e": "cypress run",
+    "ci:test": "react-scripts test --watchAll=false && start-server-and-test start http-get://0.0.0.0:3000 e2e"
   },
   "eslintConfig": {
     "extends": [
@@ -52,7 +53,8 @@
     "eslint-plugin-jest": "^27.6.0",
     "eslint-plugin-react": "^7.33.2",
     "jest": "^27.5.1",
-    "standard": "^17.1.0"
+    "standard": "^17.1.0",
+    "start-server-and-test": "^2.0.2"
   },
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "main": ".eslintrc.js",
