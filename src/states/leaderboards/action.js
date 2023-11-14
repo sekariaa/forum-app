@@ -19,7 +19,7 @@ function asyncPopulateLeaderboards() {
 		dispatch(showLoading())
 		try {
 			const leaderboards = await api.getLeaderBoards()
-			// dispatch(receiveLeaderboardsActionCreator(leaderboards))
+			dispatch(receiveLeaderboardsActionCreator(leaderboards))
 		} catch (error) {
 			window.alert(error.message)
 		} finally {
