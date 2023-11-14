@@ -21,7 +21,7 @@ function asyncPopulateLeaderboards() {
 			const leaderboards = await api.getLeaderBoards()
 			dispatch(receiveLeaderboardsActionCreator(leaderboards))
 		} catch (error) {
-			window.alert(error.message)
+			// window.alert(error.message)
 		} finally {
 			dispatch(hideLoading())
 		}
