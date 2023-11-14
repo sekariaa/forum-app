@@ -1,0 +1,623 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--primary-color: #164863;
+	--secondary-color: #427d9d;
+	--accent-color: #9bbec8;
+	--background-color: #ddf2fd;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+/*LOGIN */
+.login-page {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	background-color: var(--background-color);
+}
+
+.login-page__hero {
+	padding: 0.5rem;
+}
+
+.login-page__hero h1 {
+	font-size: 2rem;
+}
+
+.login-page__main {
+	background-color: white;
+	padding: 2rem;
+	border-radius: 8px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+	text-align: center;
+}
+
+.login-input {
+	display: flex;
+	flex-direction: column;
+}
+
+.login-input input {
+	padding: 0.5rem;
+	margin: 0.5rem 0;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+
+.login-input button {
+	background-color: var(--secondary-color);
+	color: white;
+	padding: 0.5rem;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.login-input button:hover {
+	background-color: var(--accent-color);
+}
+
+/* Style the link */
+.login-page__main a {
+	color: var(--primary-color);
+	text-decoration: none;
+}
+
+.login-page__main a:hover {
+	text-decoration: underline;
+}
+
+/* REGISTER */
+.register-page {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	background-color: var(--background-color);
+}
+
+.register-page__hero {
+	padding: 0.5rem;
+}
+
+.register-page__hero h1 {
+	font-size: 2rem;
+}
+
+.register-page__main {
+	background-color: white;
+	border-radius: 8px;
+	padding: 2rem;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.register-input {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.register-input input {
+	padding: 0.5rem;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+
+.register-input button {
+	background-color: var(--secondary-color);
+	color: white;
+	border: none;
+	border-radius: 4px;
+	padding: 0.5rem;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+.register-input button:hover {
+	background-color: var(--accent-color);
+}
+
+.register-page__main a {
+	color: var(--primary-color);
+	text-decoration: none;
+}
+
+/* NAVIGATION TOP */
+/* navigation.css */
+
+.navigation {
+	background-color: var(--primary-color);
+	color: white;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem;
+}
+
+.logo {
+	text-decoration: none;
+	color: white;
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
+.user-info {
+	display: flex;
+	align-items: center;
+}
+
+.user-info nav {
+	margin-right: 1rem;
+}
+
+.user-info nav a {
+	text-decoration: none;
+	color: white;
+	font-size: 1.5rem;
+}
+
+.user-info img {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	margin-right: 1rem;
+}
+
+.sign-out-button {
+	background-color: var(--secondary-color);
+	color: white;
+	border: none;
+	padding: 0.5rem 1rem;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.sign-out-button:hover {
+	background-color: var(--accent-color);
+}
+
+/* NAVIGATON BOTTOM */
+nav {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	padding: 1rem 0;
+	border-top: 1px solid #ddd; /* Tambahkan border di bagian atas */
+	background-color: #fff; /* Atur warna latar belakang menjadi putih */
+}
+
+.navigation-item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: var(--primary-color); /* Gunakan warna utama yang telah didefinisikan */
+	text-decoration: none;
+}
+
+.navigation-item__icon {
+	font-size: 1.5rem;
+}
+
+.navigation-item__label {
+	font-size: 0.9rem;
+	font-weight: bold;
+}
+
+.navigation-item a {
+	color: var(--primary-color);
+	text-decoration: none;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+/* HOMEPAGE */
+.home-page {
+	display: grid;
+	grid-template-columns: repeat(1, 1fr); /* Mengatur 1 kolom dengan lebar yang sama */
+	gap: 16px; /* Menambahkan jarak antar elemen */
+	padding: 16px;
+	background-color: white;
+	border-radius: 8px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	margin: 16px;
+	margin-bottom: 80px;
+}
+
+/* Style for category buttons */
+.home-page button {
+	background-color: var(--primary-color);
+	color: white;
+	padding: 10px 20px;
+	margin: 5px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: background-color 0.3s; /* Efek transisi warna saat hover */
+}
+
+/* Add a hover effect to the buttons */
+.home-page button:hover {
+	background-color: var(--secondary-color);
+}
+
+/* Style for the thread list */
+.thread-item {
+	border: 1px solid #ccc;
+	padding: 16px;
+	margin: 16px 0;
+	border-radius: 4px;
+}
+
+/* Style for thread titles */
+.thread-item__title {
+	font-size: 1.2em;
+	font-weight: bold;
+	color: var(--primary-color);
+	cursor: pointer;
+}
+
+/* Style for thread category */
+.thread-item__category {
+	/* background-color: var(--accent-color); */
+	color: #777;
+	padding: 4px 8px;
+	border-radius: 4px;
+	margin-bottom: 8px;
+	border: 1px solid var(--primary-color); /* Mengatur border dengan warna sesuai kebutuhan (contoh: --primary-color) */
+	display: inline-block;
+}
+
+.thread-item__components {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	justify-content: flex-end;
+	flex: 1;
+}
+
+/* Style for thread text */
+.thread-item__body {
+	font-size: 1em;
+	color: #333;
+	margin-top: 16px;
+}
+
+/* Style for comments count and created at info */
+.thread-item__total-comments,
+.thread-item__created-at {
+	font-size: 0.9em;
+	color: #777;
+	margin-right: 8px;
+}
+
+/* Style for the thread owner info */
+.thread-item__made-by {
+	font-size: 0.9em;
+	font-weight: bold;
+	color: #777;
+}
+
+.thread-list__header {
+	color: var(--primary-color);
+}
+
+/* NOT FOUND 404 */
+.not-found {
+	color: #777;
+	font-size: 24px;
+	text-align: center;
+	margin-top: 100px;
+}
+
+/* DETAIL PAGE */
+.detail-page {
+	padding: 16px;
+	margin: 16px;
+	border-radius: 8px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	margin-bottom: 80px;
+}
+
+.detail-page button {
+	background-color: var(--primary-color);
+	color: white;
+	padding: 10px 20px;
+	margin: 5px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: background-color 0.3s; /* Efek transisi warna saat hover */
+}
+
+/* Add a hover effect to the buttons */
+.detail-page button:hover {
+	background-color: var(--secondary-color);
+}
+
+/* Add styles for the CommentInput component */
+.comment-input {
+	margin-top: 16px;
+}
+
+.comment-input__title {
+	font-size: 1.2em;
+	font-weight: bold;
+	color: var(--primary-color);
+}
+
+.comment-input textarea {
+	width: 100%;
+	padding: 8px;
+	margin: 8px 0;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	resize: none;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.comment-input button {
+	background-color: var(--primary-color);
+	color: white;
+	padding: 10px 20px;
+	margin: 5px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: background-color 0.3s; /* Efek transisi warna saat hover */
+}
+
+.comment-input button:hover {
+	background-color: var(--accent-color);
+}
+
+/* Add styles for the CommentList component */
+.comment-item {
+	display: flex;
+	margin-top: 16px;
+}
+
+.comment-item__user-photo {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	margin-right: 16px;
+	overflow: hidden;
+}
+
+.comment-item__user-photo img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 50%;
+}
+
+.comment-item__detail {
+	flex: 1;
+}
+
+.comment-item__user-info {
+	display: flex;
+	align-items: center;
+	margin-bottom: 8px;
+}
+
+.comment-item__user-name {
+	font-weight: bold;
+	color: var(--primary-color);
+}
+
+.comment-item__created-at {
+	font-size: 0.9em;
+	color: #777;
+}
+
+.comment-item__text {
+	font-size: 1em;
+	color: #333;
+}
+
+/* Add styles for the CommentList component */
+.comment-list {
+	margin-top: 16px;
+}
+
+.thread-detail__category {
+	color: #777;
+	padding: 4px 8px;
+	border-radius: 4px;
+	margin-bottom: 8px;
+	border: 1px solid var(--primary-color);
+	display: inline-block;
+}
+
+.thread-detail__made-by img {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+}
+
+.thread-detail__created-at {
+	font-size: 0.9em;
+	color: #777;
+	margin-right: 8px;
+}
+
+/* Style for the thread owner info */
+.thread-detail__made-by {
+	font-size: 0.9em;
+	font-weight: bold;
+	color: #777;
+}
+
+.thread-detail__items {
+	display: flex;
+	flex-wrap: wrap; /* Memastikan kontennya tidak terlalu panjang */
+	align-items: center; /* Untuk menengahkan vertikal */
+	overflow: hidden; /* Untuk mengatasi konten yang terlalu lebar */
+	white-space: nowrap; /* Menghindari pemisahan baris */
+	justify-content: flex-end;
+}
+
+.thread-detail__items > * {
+	margin-right: 10px; /* Memberi jarak antara elemen-elemen di dalam .thread-detail__items */
+}
+
+/* ADD */
+.link-to-new-thread {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	background-color: var(--primary-color);
+	color: #fff;
+	font-size: 24px;
+	border: none;
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	cursor: pointer;
+	z-index: 1; /* Menempatkan link di atas konten lain */
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Menambahkan bayangan */
+	transition: background-color 0.3s;
+}
+
+.link-to-new-thread:hover {
+	background-color: var(--secondary-color);
+	transition: background-color 0.3s;
+}
+
+/* Tambahkan ini ke file style.css Anda */
+.thread-page__add {
+	margin-top: 10px;
+}
+
+.thread-input {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.thread-input__input {
+	padding: 0.5rem;
+	margin: 0.5rem 0;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	width: 50%;
+
+	font-family: 'Open Sans', sans-serif;
+}
+
+.thread-input__submit {
+	background-color: var(--secondary-color);
+	color: white;
+	padding: 0.5rem 1rem; /* Sesuai dengan panjang kata "Save" */
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+	width: 50%;
+	margin: 0.5rem 0; /* Tambahkan margin kiri kanan */
+}
+
+.thread-input__submit:hover {
+	background-color: var(--accent-color);
+}
+
+/* LEADERBOARD */
+/* Tambahkan ini ke file style.css Anda */
+.leaderboard-page {
+	align-items: center;
+	padding: 16px;
+	margin-bottom: 80px;
+}
+
+.leaderboard-page__header {
+	text-align: center;
+}
+
+.leaderboard-page__title,
+.thread-page__title {
+	font-size: 1.5rem;
+	color: var(--primary-color);
+	text-align: center;
+}
+
+.leaderboard-page__subtitle {
+	font-size: 1rem;
+	color: var(--secondary-color);
+}
+
+.leaderboard-page__table {
+	display: flex;
+	justify-content: space-between;
+	padding: 16px;
+	width: 100%;
+	background-color: var(--primary-color);
+	color: white;
+	font-weight: bold;
+}
+
+.leaderboard-page__header-user {
+	flex: 1; /* Ini akan membuat "User" memenuhi sebagian besar ruang */
+}
+
+.leaderboard-page__header-score {
+	flex: 1; /* Ini akan membuat "Score" memenuhi sebagian besar ruang */
+	text-align: right; /* Ini akan menggeser "Score" ke kanan */
+}
+
+/* CSS untuk LeaderBoardItem */
+.leaderboard-item {
+	display: flex;
+	justify-content: space-between; /* Ini akan membuat elemen dalam satu baris */
+	align-items: center; /* Ini akan membuat elemen berada di tengah secara vertikal */
+	padding: 10px;
+}
+
+.leaderboard-item__user {
+	display: flex;
+	align-items: center;
+}
+
+.leaderboard-item__user img {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	margin-right: 16px;
+}
+
+.leaderboard-item p {
+	font-weight: bold;
+	text-align: right;
+	display: block;
+	margin-left: auto;
+}
+
+.loading {
+	position: sticky;
+	top: 0;
+}
+
+@media (max-width: 768px) {
+	.thread-item__components {
+		/* Mengatur ukuran elemen menjadi lebih kecil */
+		flex-basis: 50%; /* Atur sesuai dengan kebutuhan ukuran yang lebih kecil */
+	}
+}
