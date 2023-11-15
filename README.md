@@ -64,7 +64,12 @@ Ensure you have the following software installed on your machine:
 
 The project structure is organized as follows:
 
-- `src`: Contains the source code for the React application.
 - `cypress`: Cypress end-to-end test scripts.
 - `public`: Static assets and HTML template.
+- `src`: Contains the source code for the React application.
+- `components`: contains reusable React components that can be used across different parts of the application.
+- `hooks`: folder houses custom React Hooks, which are functions allowing the use of React features within functional components.
+- `pages`: folder contains components representing the main pages of your application.
+- `states`: folder is related to global state management using Redux or other state management solutions.
+- `utils`: folder comprises utility functions or helper functions that can be used throughout the project.
 - `styles`: CSS stylesheets.
